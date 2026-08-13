@@ -26,6 +26,24 @@ harness-doctor --target dsh,codex --json
 harness-doctor --target all --strict
 ```
 
+生成可发给售后的脱敏支持包：
+
+```bash
+harness-doctor bundle --target all --output ./harness-support.json --json
+```
+
+支持包会把 HOME、工作目录和 token 形状的文本替换成占位符；默认拒绝覆盖已有文件，并返回 SHA-256。
+
+查看允许执行的修复：
+
+```bash
+harness-doctor fixes --json
+harness-doctor fix install_dsh          # 只显示确认要求，不执行
+harness-doctor fix install_dsh --yes    # 只执行这一个明确修复
+```
+
+当前可执行修复只有锁定版本的 `install_dsh` 和 `repair_dsh`。其它 `fix_id` 是给 U-King 或未来修复器消费的建议标识，不会被猜测执行；没有 `--fix-all`。
+
 默认检查 localhost 端口；完全离线扫描可用：
 
 ```bash
@@ -75,7 +93,7 @@ harness-doctor --no-ports
 
 - 不读 Key 内容，只报告哪些环境变量名称存在。
 - 不联网；端口探测只连接 `127.0.0.1`。
-- 不创建、修改或删除 Harness 配置。
+- doctor/bundle 不创建、修改或删除 Harness 配置；fix 只执行用户明确选择且再次确认的白名单动作。
 - 版本探测有超时。
 - stdout 只输出报告，意外错误走 stderr。
 
