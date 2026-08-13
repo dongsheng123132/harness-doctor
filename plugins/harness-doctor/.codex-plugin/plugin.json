@@ -1,0 +1,30 @@
+{
+  "name": "harness-doctor",
+  "version": "0.3.0",
+  "description": "Diagnose DeepSeek Harness, Claude Code, Codex, and OpenClaw installations without exposing credentials.",
+  "author": {
+    "name": "hfshfg",
+    "email": "38004547@qq.com",
+    "url": "https://github.com/dongsheng123132"
+  },
+  "homepage": "https://github.com/dongsheng123132/harness-doctor",
+  "repository": "https://github.com/dongsheng123132/harness-doctor",
+  "license": "MIT",
+  "keywords": ["ai-agent", "diagnostics", "deepseek", "codex", "openclaw"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Harness Doctor",
+    "shortDescription": "Safely diagnose local AI harnesses",
+    "longDescription": "Runs read-only, machine-readable checks for DeepSeek Harness, Claude Code, Codex, and OpenClaw; explains failures and can create a redacted support bundle.",
+    "developerName": "hfshfg",
+    "category": "Developer Tools",
+    "capabilities": ["Read-only diagnostics", "Redacted support bundles"],
+    "websiteURL": "https://github.com/dongsheng123132/harness-doctor",
+    "defaultPrompt": [
+      "Diagnose my AI harness environment and explain the safest next actions.",
+      "Create a redacted Harness Doctor support bundle.",
+      "Check whether DeepSeek Harness is installed correctly."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

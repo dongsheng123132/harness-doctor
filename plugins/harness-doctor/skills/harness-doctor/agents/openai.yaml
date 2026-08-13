@@ -1,0 +1,4 @@
+interface:
+  display_name: "Harness Doctor"
+  short_description: "Diagnose AI harness installations safely"
+  default_prompt: "Diagnose my AI harness environment and explain the safest next actions."

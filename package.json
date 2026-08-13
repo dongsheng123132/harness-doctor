@@ -1,6 +1,6 @@
 {
   "name": "harness-doctor",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Read-only health checks for DeepSeek Harness, Claude Code, Codex, and OpenClaw",
   "type": "module",
   "bin": {

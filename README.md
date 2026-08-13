@@ -12,10 +12,21 @@
 ## 安装
 
 ```bash
-npm install -g github:dongsheng123132/harness-doctor
+npm install -g github:dongsheng123132/harness-doctor#v0.3.0
 ```
 
 需要 Node.js 20+。检查 DSH 时会额外验证 DSH 自己要求的 Node.js 22.19+ 或 24+。
+
+### 安装到 Codex 插件市场
+
+```bash
+codex plugin marketplace add dongsheng123132/harness-doctor --ref v0.3.0
+codex plugin add harness-doctor@harness-doctor
+```
+
+插件会教 Codex 运行只读体检、解释稳定 JSON、生成脱敏支持包，并在执行任何 DSH 安装/修复前要求用户明确选择一个 `fix_id`。CLI 仍是唯一诊断核心，插件不复制业务逻辑。
+
+也可以从 [GitHub Releases](https://github.com/dongsheng123132/harness-doctor/releases) 下载 npm tarball 后离线安装。
 
 ## 使用
 
