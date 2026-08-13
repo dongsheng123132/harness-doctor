@@ -1,5 +1,7 @@
 # Harness Doctor
 
+[![skills.sh](https://skills.sh/b/dongsheng123132/harness-doctor)](https://skills.sh/dongsheng123132/harness-doctor/harness-doctor)
+
 `harness-doctor` 是一个零依赖、只读优先的 AI Agent Harness 体检工具。目前检查：
 
 - DeepSeek Harness (`dsh`)
@@ -27,6 +29,14 @@ codex plugin add harness-doctor@harness-doctor
 插件会教 Codex 运行只读体检、解释稳定 JSON、生成脱敏支持包，并在执行任何 DSH 安装/修复前要求用户明确选择一个 `fix_id`。CLI 仍是唯一诊断核心，插件不复制业务逻辑。
 
 也可以从 [GitHub Releases](https://github.com/dongsheng123132/harness-doctor/releases) 下载 npm tarball 后离线安装。
+
+### 安装为通用 Agent Skill
+
+```bash
+npx skills add dongsheng123132/harness-doctor --skill harness-doctor --full-depth
+```
+
+该入口已收录到 [skills.sh](https://skills.sh/dongsheng123132/harness-doctor/harness-doctor)，可供 Codex、Claude Code、Cursor、Kimi Code、OpenCode 等支持 Agent Skills 的客户端发现和安装。
 
 ## 使用
 
