@@ -1,6 +1,6 @@
 {
   "name": "harness-doctor",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Diagnose DeepSeek Harness, Claude Code, Codex, and OpenClaw installations without exposing credentials.",
   "author": {
     "name": "hfshfg",

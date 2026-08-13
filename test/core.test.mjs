@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 
 import {
+  VERSION,
   createSupportBundle,
   listFixes,
   nodeSupportsDsh,
@@ -15,6 +16,11 @@ import {
   runFix,
   summarize
 } from "../lib/core.mjs";
+
+test("CLI version stays aligned with package metadata", () => {
+  const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+  assert.equal(VERSION, packageJson.version);
+});
 
 test("parses an explicit target set", () => {
   assert.deepEqual(parseTargetNames("dsh,codex,dsh"), ["dsh", "codex"]);

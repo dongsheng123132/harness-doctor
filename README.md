@@ -12,7 +12,7 @@
 ## 安装
 
 ```bash
-npm install -g github:dongsheng123132/harness-doctor#v0.3.0
+npm install -g github:dongsheng123132/harness-doctor#v0.3.1
 ```
 
 需要 Node.js 20+。检查 DSH 时会额外验证 DSH 自己要求的 Node.js 22.19+ 或 24+。
@@ -20,7 +20,7 @@ npm install -g github:dongsheng123132/harness-doctor#v0.3.0
 ### 安装到 Codex 插件市场
 
 ```bash
-codex plugin marketplace add dongsheng123132/harness-doctor --ref v0.3.0
+codex plugin marketplace add dongsheng123132/harness-doctor --ref v0.3.1
 codex plugin add harness-doctor@harness-doctor
 ```
 

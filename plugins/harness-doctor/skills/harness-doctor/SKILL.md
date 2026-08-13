@@ -13,7 +13,7 @@ Use the published `harness-doctor` CLI as the single diagnostic core. Treat exit
 2. If missing, explain that the pinned install command is:
 
    ```bash
-   npm install -g github:dongsheng123132/harness-doctor#v0.3.0
+   npm install -g github:dongsheng123132/harness-doctor#v0.3.1
    ```
 
    Install it only when the user has authorized installation.
