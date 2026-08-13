@@ -1,0 +1,43 @@
+{
+  "name": "harness-doctor",
+  "version": "0.1.0",
+  "description": "Read-only health checks for DeepSeek Harness, Claude Code, Codex, and OpenClaw",
+  "type": "module",
+  "bin": {
+    "harness-doctor": "./bin/harness-doctor.mjs"
+  },
+  "exports": {
+    ".": "./lib/core.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/harness-doctor.mjs && node --check lib/core.mjs && npm test",
+    "prepack": "npm run check"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "agent",
+    "harness",
+    "doctor",
+    "deepseek",
+    "claude",
+    "codex",
+    "openclaw"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongsheng123132/harness-doctor.git"
+  },
+  "homepage": "https://github.com/dongsheng123132/harness-doctor#readme",
+  "bugs": "https://github.com/dongsheng123132/harness-doctor/issues",
+  "author": "hfshfg <38004547@qq.com>",
+  "license": "MIT"
+}
