@@ -1,5 +1,8 @@
 # Harness Doctor
 
+![Harness Doctor — one command, four AI harnesses, no secrets](https://raw.githubusercontent.com/dongsheng123132/harness-doctor/main/assets/social-preview.png)
+
+[![npm version](https://img.shields.io/npm/v/harness-doctor)](https://www.npmjs.com/package/harness-doctor)
 [![skills.sh](https://skills.sh/b/dongsheng123132/harness-doctor)](https://skills.sh/dongsheng123132/harness-doctor/harness-doctor)
 
 `harness-doctor` 是一个零依赖、只读优先的 AI Agent Harness 体检工具。目前检查：
@@ -14,7 +17,13 @@
 ## 安装
 
 ```bash
-npm install -g github:dongsheng123132/harness-doctor#v0.3.1
+npm install -g harness-doctor
+```
+
+也可以锁定 GitHub Release 安装：
+
+```bash
+npm install -g github:dongsheng123132/harness-doctor#v0.3.2
 ```
 
 需要 Node.js 20+。检查 DSH 时会额外验证 DSH 自己要求的 Node.js 22.19+ 或 24+。
@@ -22,7 +31,7 @@ npm install -g github:dongsheng123132/harness-doctor#v0.3.1
 ### 安装到 Codex 插件市场
 
 ```bash
-codex plugin marketplace add dongsheng123132/harness-doctor --ref v0.3.1
+codex plugin marketplace add dongsheng123132/harness-doctor --ref v0.3.2
 codex plugin add harness-doctor@harness-doctor
 ```
 
@@ -37,6 +46,12 @@ npx skills add dongsheng123132/harness-doctor --skill harness-doctor --full-dept
 ```
 
 该入口已收录到 [skills.sh](https://skills.sh/dongsheng123132/harness-doctor/harness-doctor)，可供 Codex、Claude Code、Cursor、Kimi Code、OpenCode 等支持 Agent Skills 的客户端发现和安装。
+
+## 相关工具
+
+如果你要把 DeepSeek Harness 接进脚本、CI 或其它 Agent，请使用 [`@hfshfg/dshx`](https://github.com/dongsheng123132/dshx)：它提供 `--cwd`、stdin、timeout、稳定 JSON 和 `doctor`。
+
+需要对外介绍本项目时，可直接复用 [`docs/launch-kit.md`](docs/launch-kit.md) 中的中英文首发文案和 30 秒演示脚本。
 
 ## 使用
 
