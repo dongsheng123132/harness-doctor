@@ -2,7 +2,7 @@
 
 ![Harness Doctor — one command, four AI harnesses, no secrets](https://raw.githubusercontent.com/dongsheng123132/harness-doctor/main/assets/social-preview.png)
 
-作者 / Author：He Fangsheng (贺方升 / 贺去病; Dosen)· [hequbing.com](https://www.hequbing.com)
+作者 / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen)· [hequbing.com](https://www.hequbing.com)
 
 [![npm version](https://img.shields.io/npm/v/harness-doctor)](https://www.npmjs.com/package/harness-doctor)
 [![skills.sh](https://skills.sh/b/dongsheng123132/harness-doctor)](https://skills.sh/dongsheng123132/harness-doctor/harness-doctor)
